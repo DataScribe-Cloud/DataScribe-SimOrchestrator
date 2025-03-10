@@ -1,0 +1,68 @@
+rm: ../parameters: No such file or directory
+rm: ../microstructures: No such file or directory
+rm: ../results: No such file or directory
+rm: ../heat: No such file or directory
+rm: *.dat: No such file or directory
+rm: *.plt: No such file or directory
+Note: The following floating-point exceptions are signalling: IEEE_DIVIDE_BY_ZERO IEEE_UNDERFLOW_FLAG
+ cpu!!!   7.2549999999999993E-003
+ Parameters read from CSV file:
+ Parameter            1 :    2.5337913755397800E-002
+ Parameter            2 :    1.6883019768740000E-004
+ Parameter            3 :   0.85413462450975119     
+ Parameter            4 :   0.89943919804739436     
+ Parameter            5 :   0.93344265981821517     
+ Parameter            6 :    3.4895539818373001E-003
+ Parameter            7 :   0.90847646624007261     
+
+ IG=         100
+ JG=         400
+ DX=   3.0303030303030304E-002
+
+ EPSILON_SL  =   2.5337913755397800E-002
+ IntMobility =   1.6883019768740000E-004
+ alpha       =  0.93344265981821517     
+ nu1         =   3.4895539818373001E-003
+
+ alpha_heat  =  0.90847646624007261     
+ Latent_H (K)=  0.85413462450975119     
+ Te          =  0.89943919804739436     
+
+
+ INITIAL geometry is initiated! ...
+  DT=  0.10000000D-04
+  DT1=
+
+ CALCULATING....
+
+ start explicit...
+   1.0000000000000000        9.8933087173543911E-003  0.85413462450975119     
+ new file_cycle...
+ iter           0 time   0.0000000000000000      PHITOT   2.3604355448013630E-002 phi(max)   1.0000000000000000      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        1000 time   9.9999999999997608E-003 PHITOT  0.10021838153572878      phi(max)  0.99999999999894240      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        2000 time   1.9999999999999355E-002 PHITOT  0.17435208588086748      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        3000 time   2.9999999999998948E-002 PHITOT  0.24851460398392211      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        4000 time   4.0000000000001576E-002 PHITOT  0.32264600666617332      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        5000 time   5.0000000000004638E-002 PHITOT  0.39679342067069368      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        6000 time   6.0000000000007700E-002 PHITOT  0.47095010112136371      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        7000 time   7.0000000000005558E-002 PHITOT  0.54507025467410042      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        8000 time   8.0000000000001681E-002 PHITOT  0.61920611514424229      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter        9000 time   8.9999999999997804E-002 PHITOT  0.69335820256307379      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter       10000 time   9.9999999999993927E-002 PHITOT  0.76751926930956926      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter       11000 time  0.10999999999999005      PHITOT  0.84166319167198389      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter       12000 time  0.11999999999998617      PHITOT  0.91579586715806549      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ new file_cycle...
+ iter       13000 time  0.12999999999998924      PHITOT  0.98992154895507700      phi(max)  0.99999999999999911      phi(min)   0.0000000000000000     
+ interface has reached the simulation domain top edge. Stoping...

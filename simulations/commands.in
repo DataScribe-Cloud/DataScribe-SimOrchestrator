@@ -1,0 +1,5 @@
+cd ../simulations/0/src; ./kobayashi; 
+cd ../simulations/1/src; ./kobayashi; 
+cd ../simulations/2/src; ./kobayashi; 
+cd ../simulations/3/src; ./kobayashi; 
+cd ../simulations/4/src; ./kobayashi; 
