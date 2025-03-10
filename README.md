@@ -44,6 +44,7 @@ Step 4. After all of the simulations are finished, compile the individual result
 
 # Please cite any of the below works if you like this work to help promote my work:
 
+```
 @article{attari2021machine,
 title={Machine Learning-Assisted High-Throughput Exploration of Interface Energy Space in Multi-Phase-Field Model with CALPHAD potential},
 author={Attari, Vahid and Arroyave, Raymundo},
@@ -63,6 +64,7 @@ pages={452--470},
 year={2020},
 publisher={Elsevier}
 }
+```
 
 ```
 application structure/
@@ -96,8 +98,9 @@ application structure/
 │── docs/  # Documentation
 ```
 
-###
+### Example workflow
 
+```
 attari.v@C7F9W7HF-371e6c-3 1_app % python3 main.py                                     
 SLURM script 'slurm_script.sh' created successfully.
 #!/bin/bash
@@ -194,3 +197,5 @@ What would you like to do?
 3. Perform Faster run
 4. Quit
 Enter your choice (0:Local/1:Terra/2:Grace/3:Faster/4:Quit): ???
+
+```
