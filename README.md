@@ -3,6 +3,20 @@
 
 ## Please read before use:
 
+---
+
+## 📖 Getting Started
+
+### Step 0: Prepare the Input Parameter File
+- Place the **input parameter file** in the `input/` folder.
+- The input file is typically a **CSV**, generated using **Design of Experiment (DOE)** methods such as:
+- **Latin Hypercube Sampling (LHS)**
+- **Sobol Sequences**
+- A sample file is available in the `input/` folder.
+- If needed, generate your own sample input file using the provided MATLAB script: `input.m`.
+
+---
+
 Step 0. Place the input parameter file in the “input” folder. The input parameter file is often a "CSV" file that is created using Design Of Experiment (DOE) methods such as "LHS", "Sobol", etc. There is a small example in the "input" folder. You may use the "input.m" matlab file to create an sample-set.
 
 Step 1. Place the simulation engine (all required files for running one instance of simulation) in the “1_setup/black_box_function” and run “Surrogate.m” in the supercomputer environment to create the simulation environment. This code will create a directory named “simulation” in the application root directory with appropriate individual folders. The current setup works for any python black-box computing engine and is tested for Fortran, Matlab, and other codes. If your code is not python, rename the appropriate lines in the Matlab code. Let me know if you need any help with this.
@@ -14,6 +28,8 @@ Step 2. The code will also create a file named “commands.in” and will place 
 Step 3. Edit "2_running/batchFile.slurm” according to your need and run it. It will execute all commands located in the “commands.in”. 
 
 Step 4. After all of the simulations are finished, compile the individual result files generated during simulation run-time in the individual folders inside the simulation directory. 
+
+---
 
 ### How to cite High-Throuput black-box function runner
 
