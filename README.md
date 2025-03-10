@@ -147,7 +147,7 @@ application structure/
 │── scripts/          # Batch processing scripts
 │   │── batchFile.slurm  
 │   │── slurm_script.sh  
-│── src/  # Source code for the application
+│── 1_app/src/  # Source code for the application
 │   │── __init__.py  
 │   │── black_box/  # Black-box related functions
 │   │   │── __init__.py  
