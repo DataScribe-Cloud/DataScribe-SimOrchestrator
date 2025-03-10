@@ -105,7 +105,7 @@ What would you like to do?
 2. Perform Grace run
 3. Perform Faster run
 4. Quit
-Enter your choice (0:Local/1:Terra/2:Grace/3:Faster/4:Quit): ???
+Enter your choice (0:Local/1:Terra/2:Grace/3:Faster/4:Quit): choose one option, if testing, choose local run
 
 ```
 
