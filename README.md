@@ -7,97 +7,6 @@
 
 ## 📖 Getting Started
 
-### Step 0: Prepare the Input Parameter File
-- Place the **input parameter file** in the `input/` folder.
-- The input file is typically a **CSV**, generated using **Design of Experiment (DOE)** methods such as:
-- **Latin Hypercube Sampling (LHS)**
-- **Sobol Sequences**
-- A sample file is available in the `input/` folder.
-- If needed, generate your own sample input file using the provided MATLAB script: `input.m`.
-
-### Step 1: Setup the Simulation Engine
-- Place all necessary files for running **one instance of the simulation** inside `1_setup/black_box_function/`.
-- Run **`Surrogate.m`** in your **supercomputer environment** to set up the simulation.
-- This will generate a `simulation/` directory in the root folder, containing structured subdirectories.
-
-✅ **Supported Simulation Engines:**
-- **Python-based black-box models**
-- **Fortran, MATLAB, and other compiled codes**  
-_(Modify the MATLAB script to match your specific code requirements.)_
-
-🔹 **Note:**  
-The simulation code (**black-box function**) should:
-- Read **one set of parameters** from an input file.
-- Write the **output "quantities of interest"** to a result file.
-
-Note: The simulation code (black-box function) should read one set of parameters from an input file and write the output "quantities of interest" to a result text file.
-
-Step 2. The code will also create a file named “commands.in” and will place it in the “2_running” folder. Check the example file in the folder.
-
-Step 3. Edit "2_running/batchFile.slurm” according to your need and run it. It will execute all commands located in the “commands.in”. 
-
-Step 4. After all of the simulations are finished, compile the individual result files generated during simulation run-time in the individual folders inside the simulation directory. 
-
----
-
-### How to cite High-Throuput black-box function runner
-
-# Please cite any of the below works if you like this work to help promote my work:
-
-```
-@article{attari2021machine,
-title={Machine Learning-Assisted High-Throughput Exploration of Interface Energy Space in Multi-Phase-Field Model with CALPHAD potential},
-author={Attari, Vahid and Arroyave, Raymundo},
-journal={Materials Theory},
-volume={6},
-pages={5},
-year={2022},
-doi={https://doi.org/10.1186/s41313-021-00038-0}
-}
-
-@article{attari2020uncertainty,
-title={Uncertainty propagation in a multiscale CALPHAD-reinforced elastochemical phase-field model},
-author={Attari, Vahid and Honarmandi, Pejman and Duong, Thien and Sauceda, Daniel J and Allaire, Douglas and Arroyave, Raymundo},
-journal={Acta Materialia},
-volume={183},
-pages={452--470},
-year={2020},
-publisher={Elsevier}
-}
-```
-
-```
-application structure/
-│── main.py           # Entry point for the application
-│── config.py         # Configuration file 
-│── requirements.txt  # Dependencies list
-│── README.md         # Project documentation
-│── scripts/          # Batch processing scripts
-│   │── batchFile.slurm  
-│   │── slurm_script.sh  
-│── src/  # Source code for the application
-│   │── __init__.py  
-│   │── black_box/  # Black-box related functions
-│   │   │── __init__.py  
-│   │   │── black_box_function.py  
-│   │── orchestrator/  # Helper functions
-│   │   │── __init__.py  
-│   │   │── create_folder_structure.py  
-│   │   │── create_command_file.py  
-│   │   │── compile_data.py  
-│   │   │── input_sample_generation.py  
-│   │   │── samples_gen.py  
-│   │   │── data_visualization.py  
-│   │   │── microstructure_visualization.py  
-│── logs/  # Store logs
-│   │── img_cr_log.txt  
-│   │── job_log.txt  
-│── input/  # Store input data
-│── data/   # Processed or intermediate data
-│── outputs/  # Store generated outputs
-│── docs/  # Documentation
-```
-
 ### Example workflow
 
 ```
@@ -199,3 +108,65 @@ What would you like to do?
 Enter your choice (0:Local/1:Terra/2:Grace/3:Faster/4:Quit): ???
 
 ```
+
+
+---
+
+### How to cite High-Throuput black-box function runner
+
+# Please cite any of the below works if you like this work to help promote my work:
+
+```
+@article{attari2021machine,
+title={Machine Learning-Assisted High-Throughput Exploration of Interface Energy Space in Multi-Phase-Field Model with CALPHAD potential},
+author={Attari, Vahid and Arroyave, Raymundo},
+journal={Materials Theory},
+volume={6},
+pages={5},
+year={2022},
+doi={https://doi.org/10.1186/s41313-021-00038-0}
+}
+
+@article{attari2020uncertainty,
+title={Uncertainty propagation in a multiscale CALPHAD-reinforced elastochemical phase-field model},
+author={Attari, Vahid and Honarmandi, Pejman and Duong, Thien and Sauceda, Daniel J and Allaire, Douglas and Arroyave, Raymundo},
+journal={Acta Materialia},
+volume={183},
+pages={452--470},
+year={2020},
+publisher={Elsevier}
+}
+```
+
+```
+application structure/
+│── main.py           # Entry point for the application
+│── config.py         # Configuration file 
+│── requirements.txt  # Dependencies list
+│── README.md         # Project documentation
+│── scripts/          # Batch processing scripts
+│   │── batchFile.slurm  
+│   │── slurm_script.sh  
+│── src/  # Source code for the application
+│   │── __init__.py  
+│   │── black_box/  # Black-box related functions
+│   │   │── __init__.py  
+│   │   │── black_box_function.py  
+│   │── orchestrator/  # Helper functions
+│   │   │── __init__.py  
+│   │   │── create_folder_structure.py  
+│   │   │── create_command_file.py  
+│   │   │── compile_data.py  
+│   │   │── input_sample_generation.py  
+│   │   │── samples_gen.py  
+│   │   │── data_visualization.py  
+│   │   │── microstructure_visualization.py  
+│── logs/  # Store logs
+│   │── img_cr_log.txt  
+│   │── job_log.txt  
+│── input/  # Store input data
+│── data/   # Processed or intermediate data
+│── outputs/  # Store generated outputs
+│── docs/  # Documentation
+```
+
