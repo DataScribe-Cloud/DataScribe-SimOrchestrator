@@ -1,0 +1,22 @@
+contourpy==1.2.1
+cycler==0.12.1
+dill==0.3.9
+fonttools==4.51.0
+joblib==1.4.2
+kiwisolver==1.4.5
+matplotlib==3.8.4
+multiprocess==0.70.17
+numpy==2.0.1
+opencv-python==4.10.0.84
+packaging==24.0
+pandas==2.2.2
+pillow==10.3.0
+pyparsing==3.1.2
+python-dateutil==2.9.0.post0
+pytz==2024.1
+SALib==1.5.1
+scipy==1.14.0
+six==1.16.0
+tqdm==4.67.1
+tzdata==2024.1
+wheel @ file:///opt/homebrew/Cellar/python%403.12/3.12.6/libexec/wheel-0.44.0-py3-none-any.whl#sha256=d6ad895f80a568fbc066fd6c52c68c5ef40632c4d764d42af13e28e945f1920b
