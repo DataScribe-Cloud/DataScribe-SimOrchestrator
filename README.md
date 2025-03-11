@@ -114,7 +114,7 @@ Enter your choice (0:Local/1:Terra/2:Grace/3:Faster/4:Quit): choose one option, 
 
 ### How to cite High-Throuput black-box function runner
 
-#### Please cite any of the below works if you like this work to help promote my work:
+#### Please cite any of the below works if you like this work to help promote the work:
 
 ```
 @article{attari2021machine,
