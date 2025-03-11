@@ -10,7 +10,7 @@ Here are key areas of improvement and potential next phases of development to en
 	•	Improvement:
 	•	Modularize and structure the codebase better using object-oriented programming (OOP) or a service-based architecture.
 	•	Follow a clean project structure (like below):
-
+```
 src/
 ├── core/                # Core computation & processing
 │   ├── simulations.py
@@ -26,7 +26,7 @@ src/
 │   ├── helper.py
 ├── tests/               # Unit and integration tests
 ├── docs/                # Documentation
-
+```
 
 	•	Next Steps:
 	•	Introduce logging handlers for better debugging.
@@ -101,11 +101,13 @@ simulation:
 	•	Improvement:
 	•	Dockerize the application for easy deployment:
 
+```
 FROM python:3.12
 WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
 CMD ["python", "main.py"]
+```
 
 	•	Deploy on AWS Batch, Google Cloud Run, or Kubernetes for scalability.
 
